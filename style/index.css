@@ -73,12 +73,16 @@ nav{
     height: 30px; /*altura dos ícones de usuario e carrinho*/
     width: 30px; /*largura dos ícones de usuario e carrinho*/
     margin-right: 20px; /*distancia entre os icones de usuarios e carrinho ao lado direito*/
+    grid-row: 1 / 3; /* ocupa as duas linhas */
 }
 
 .icones a small {
     color: #ffffff; /*cor do texto do carrinho*/
     font-size: 10px; /*tamanho da fonte do carrinho*/
     display: block; /*exibindo o texto do carrinho em bloco*/
+    grid-column: 2;
+    grid-row: 1;
+    margin:0; /*removendo a margem do texto do carrinho*/
     
 }
 
@@ -87,11 +91,18 @@ nav{
     color: #ffffff; /*cor do texto do carrinho*/
     font-size: 12px; /*tamanho da fonte do carrinho*/
     display: block; /*exibindo o texto do carrinho em bloco*/
-    
+    grid-column: 2;
+    grid-row: 2;
+    margin:0; /*removendo a margem do texto do carrinho*/
 }
 
 .icones a {
     text-decoration: none; /*removendo sublinhado do texto do carrinho*/
+    display: grid; /*exibindo os itens do carrinho em grid*/
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    margin-right: 20px; /*distancia entre os icones de usuarios e carrinho ao lado direito*/
 }
 
 /*configurando a div icones*/
@@ -100,4 +111,25 @@ nav{
     display: flex; /*exibe os elementos em linha*/
     align-items: center; /*alinhamento vertical dos elementos*/
     gap: 10px; /*distância entre os elementos*/
+}
+
+/*configurando a area do banner*/
+.imagens-banner img {
+    
+    display: block; /*exibindo a imagem do banner como bloco*/
+    width: 100%; /*largura da imagem do banner*/
+    height: auto; /*altura automática da imagem do banner*/
+} 
+
+
+/*ajusta a imagem para cobrir todo o espaço do banner sem distorcer a imagem*/
+.banner{
+    width: 100%; /*largura do banner*/
+    height: auto; /*altura do banner*/
+    margin: 0; /*escondendo o excesso da imagem do banner*/
+    padding: 0; /*removendo o espaçamento interno do banner*/
+}
+.imagens-banner {
+    width: 100%; /*largura da div do banner*/
+    margin-top: 0; /*margem superior da divdo banner*/
 }
