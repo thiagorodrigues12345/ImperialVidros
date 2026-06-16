@@ -133,3 +133,60 @@ nav{
     width: 100%; /*largura da div do banner*/
     margin-top: 0; /*margem superior da divdo banner*/
 }
+
+.Destaques {
+    padding: 20px;
+    /*distancia entre o conteudo da div
+    de ofertas e as bordas da div*/
+}
+
+
+.titulo-Destaques {
+    font-family: poppins, sans-serif; /*fonte do titulo de ofertas*/
+    display : grid; /*exibe os elementos em grade*/
+    grid-template-columns: 2 80% 20%; /*define o tamanho das colunas da grade*/
+    grid-template-rows: 2 50% 50%; /*define o tamanho das linhas da grade*/
+}
+
+.titulo-Destaques h2 {
+    color: #000000; /*cor do texto do titulo de ofertas*/
+    font-size: 24px; /*tamanho da fonte do titulo de ofertas*/
+    grid-column: 1; /*posicionando o titulo de ofertas na segunda coluna da grade*/
+    grid-row: 1; /*ocupando as duas linhas da grade*/
+    margin: 0; /*removendo a margem do titulo de ofertas*/
+}
+
+.titulo-Destaques a {
+    text-decoration: none; /*removendo sublinhado do link de ofertas*/
+    color: #000000; /*cor do texto do link de ofertas*/
+    font-size: 14px; /*tamanho da fonte do link de ofertas*/
+    grid-column: 2; /*posicionando o link de ofertas na segunda coluna da grade*/
+    grid-row: 2; /*posicionando o link de ofertas na primeira linha da grade*/
+    align-self: center; /*alinhando o link de ofertas ao final da linha*/
+    padding-left: 80%; /*distancia do link de ofertas em relação à borda esquerda*/
+}
+
+.lista-produtos {
+    display: flex; /*exibindo os itens de ofertas em linha*/
+    justify-content: space-between; /*alinhando os itens de ofertas ao centro*/
+    font-family: poppins, sans-serif; /*fonte dos itens de ofertas*/
+    margin-top: 20px; /*margem superior dos itens de ofertas*/
+}
+
+.card-produtos {
+    width: 23%; /*largura dos itens de ofertas*/
+    height: 50%; /*altura dos itens de ofertas*/
+    background-color: #eaeaea; /*cor de fundo dos itens de ofertas*/
+    border: 1px solid #ccc; /*borda dos itens de ofertas*/
+    border-radius: 10px; /*arredondando os cantos dos itens de ofertas*/
+    padding: 10px; /*espaçamento interno dos itens de ofertas*/
+    text-align: center; /*alinhando o texto dos itens de ofertas ao centro*/
+}
+
+.card-produtos img {
+    width: 100%; /*largura da imagem dos itens de ofertas*/
+    height: auto; /*altura automática da imagem dos itens de ofertas*/
+    margin-bottom: 10px; /*margem inferior da imagem dos itens de ofertas*/
+    border-radius: 10px; /*arredondando os cantos da imagem dos itens de ofertas*/
+    position: relative; /*posição relativa para posicionar o preço dos itens de ofertas*/
+}
