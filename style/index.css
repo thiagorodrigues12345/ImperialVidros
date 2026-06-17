@@ -190,3 +190,55 @@ nav{
     border-radius: 10px; /*arredondando os cantos da imagem dos itens de ofertas*/
     position: relative; /*posição relativa para posicionar o preço dos itens de ofertas*/
 }
+
+.card-produtos h3 {
+    font-size: 18px; /*tamanho da fonte dos itens de ofertas*/
+    font-family: poppins, sans-serif; /*fonte dos itens de ofertas*/
+    color: #000000; /*cor do texto dos itens de ofertas*/
+    font-style: bold; /*estilo da fonte dos itens de ofertas*/
+}
+
+/*configurando o preço e espessura*/
+.precos{
+    display: grid; /*permite colocar itens um ao lado do outro*/
+    grid-template-columns: 2; /*duas colunas*/
+    grid-template-rows: 1; /*uma linha*/
+    align-items: center; /*alinhando os itens de preços ao centro*/
+
+}
+
+.p-antigo{
+    grid-column: 1; /*posicionando o preço antigo na primeira coluna da grade*/
+    grid-row: 1; /*posicionando o preço antigo na primeira linha da grade*/
+    text-decoration: line-through; /*adicionando linha no preço antigo*/
+    font-size: 14px; /*tamanho da fonte do preço antigo*/
+    color: #aba7a7; /*cor do texto do preço antigo*/
+
+}
+
+.p-promocional{
+    grid-column: 2; /*posicionando o preço promocional na segunda coluna da grade*/
+    grid-row: 1; /*posicionando o preço promocional na primeira linha da grade*/
+    font-weight: bold;/*deixando o preço promocional em negrito*/
+    font-size: 18px; /*tamanho da fonte do preço promocional*/
+    color: #000000; /*cor do texto do preço promocional*/
+    text-align: left; /*alinhando o preço promocional à esquerda*/
+}
+
+.espessura{
+    display: grid; /*permite colocar itens um ao lado do outro*/
+    grid-template-columns: 3; /*três colunas*/
+}
+
+.item1{
+    grid-column: 1; /*posicionando o item 1 na primeira coluna da grade*/
+    grid-row: 1; /*posicionando o item 1 na primeira linha da grade*/
+}
+.item2{
+    grid-column: 2; /*posicionando o item 2 na segunda coluna da grade*/
+    grid-row: 1; /*posicionando o item 2 na primeira linha da grade*/
+}
+.item3{
+    grid-column: 3; /*posicionando o item 3 na terceira coluna da grade*/
+    grid-row: 1; /*posicionando o item 3 na primeira linha da grade*/
+}
