@@ -174,13 +174,13 @@ nav{
 }
 
 .card-produtos {
-    width: 23%; /*largura dos itens de ofertas*/
+    width: 20%; /*largura dos itens de ofertas*/
     height: 50%; /*altura dos itens de ofertas*/
     background-color: #eaeaea; /*cor de fundo dos itens de ofertas*/
     border: 1px solid #ccc; /*borda dos itens de ofertas*/
     border-radius: 10px; /*arredondando os cantos dos itens de ofertas*/
     padding: 10px; /*espaçamento interno dos itens de ofertas*/
-    text-align: center; /*alinhando o texto dos itens de ofertas ao centro*/
+    text-align: left; /*alinhando o texto dos itens de ofertas ao centro*/
 }
 
 .card-produtos img {
@@ -200,16 +200,14 @@ nav{
 
 /*configurando o preço e espessura*/
 .precos{
-    display: grid; /*permite colocar itens um ao lado do outro*/
-    grid-template-columns: 2; /*duas colunas*/
-    grid-template-rows: 1; /*uma linha*/
+    display: flex; /*permite colocar itens um ao lado do outro*/
+   gap: 10px; /*distancia entre os itens de preços*/
     align-items: center; /*alinhando os itens de preços ao centro*/
 
 }
 
 .p-antigo{
-    grid-column: 1; /*posicionando o preço antigo na primeira coluna da grade*/
-    grid-row: 1; /*posicionando o preço antigo na primeira linha da grade*/
+   
     text-decoration: line-through; /*adicionando linha no preço antigo*/
     font-size: 14px; /*tamanho da fonte do preço antigo*/
     color: #aba7a7; /*cor do texto do preço antigo*/
@@ -217,17 +215,19 @@ nav{
 }
 
 .p-promocional{
-    grid-column: 2; /*posicionando o preço promocional na segunda coluna da grade*/
-    grid-row: 1; /*posicionando o preço promocional na primeira linha da grade*/
+   
     font-weight: bold;/*deixando o preço promocional em negrito*/
     font-size: 18px; /*tamanho da fonte do preço promocional*/
     color: #000000; /*cor do texto do preço promocional*/
     text-align: left; /*alinhando o preço promocional à esquerda*/
+    
 }
 
 .espessura{
-    display: grid; /*permite colocar itens um ao lado do outro*/
-    grid-template-columns: 3; /*três colunas*/
+    display: flex; /*permite colocar itens um ao lado do outro*/
+    gap: 23px; /*distancia entre os itens de espessura*/
+    text-align: center; /*alinhando os itens de espessura à esquerda*/
+    justify-content: center; /*alinhando os itens de espessura ao centro*/
 }
 
 .item1{
@@ -241,4 +241,64 @@ nav{
 .item3{
     grid-column: 3; /*posicionando o item 3 na terceira coluna da grade*/
     grid-row: 1; /*posicionando o item 3 na primeira linha da grade*/
+}
+
+/*configurando o rodapé*/
+
+footer{
+    background-color: #0A4BA3; /*cor de fundo do rodapé*/
+    color: #ffffff; /*cor do texto do rodapé*/
+    font-family: poppins, sans-serif; /*fonte do rodapé*/
+    padding: 20px; /*espaçamento interno do rodapé*/
+}
+
+.superior {
+    display:flex; /*permitir felxibilidade entre as colunas*/
+    gap: 10px; /*distancia entre as colunas*/
+    justify-content: space-between; /*define um tamanho igual entre as divs*/
+    flex-wrap: wrap; /*joga os textos para a próxima linha se não couberem*/
+}
+
+.inferior {
+    display:flex; /*permitir felxibilidade entre as colunas*/
+    gap: 10px; /*distancia entre as colunas*/
+    justify-content: space-between; /*define um tamanho igual entre as divs*/
+    flex-wrap: wrap; /*joga os textos para a próxima linha se não couberem*/
+    align-items: center; /*alinhando os itens do rodapé ao centro*/
+}
+
+.coluna1, .coluna2, .coluna3 {
+    flex: 1; /*definindo o tamanho das colunas do rodapé*/
+   padding-left: 120px;
+}
+
+.superior h2 {
+    font-size: 18px; /*tamanho da fonte dos títulos do rodapé*/
+    font-weight: bold; /*negrito nos titulos*/
+}
+
+.superior p {
+    font-size: 12px; /*tamanho dos paragrafos*/
+}
+
+.superior a {
+    color: #ffffff; /*cor do links*/
+    font-size: 10px; /*tamanho dos links*/
+    text-decoration: none; /*remove os sublinhados*/
+
+}
+
+.superior img{
+    width: 24px; /*define tamanho dos icones*/
+
+}
+
+.coluna2 a img{
+    padding-right: 3px; /*distanciar a imagem do texto*/
+
+}
+
+.coluna2 a{
+    display: flex;/*deixar imagem e endereço lado a lado*/
+    align-items: center;
 }
