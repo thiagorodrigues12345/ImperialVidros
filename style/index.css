@@ -265,11 +265,12 @@ footer{
     justify-content: space-between; /*define um tamanho igual entre as divs*/
     flex-wrap: wrap; /*joga os textos para a próxima linha se não couberem*/
     align-items: center; /*alinhando os itens do rodapé ao centro*/
+    border-top: #ffffff solid 1px; /*borda no topo do inferior*/
 }
 
 .coluna1, .coluna2, .coluna3 {
     flex: 1; /*definindo o tamanho das colunas do rodapé*/
-   padding-left: 120px;
+   padding-left: 140px;
 }
 
 .superior h2 {
@@ -283,15 +284,11 @@ footer{
 
 .superior a {
     color: #ffffff; /*cor do links*/
-    font-size: 10px; /*tamanho dos links*/
+    font-size: 13px; /*tamanho dos links*/
     text-decoration: none; /*remove os sublinhados*/
 
 }
 
-.superior img{
-    width: 24px; /*define tamanho dos icones*/
-
-}
 
 .coluna2 a img{
     padding-right: 3px; /*distanciar a imagem do texto*/
@@ -302,3 +299,52 @@ footer{
     display: flex;/*deixar imagem e endereço lado a lado*/
     align-items: center;
 }
+
+
+.superior img{
+    width: 24px; /*define tamanho dos icones*/
+
+}
+
+
+/*configurando o paragrafo do rodape inferior*/
+
+.inferior p {
+    font-size: 12px;/*tamanho do texto*/
+
+
+}
+
+.inferior .links {
+    display:flex;/*tornar os links flexiveis*/
+    font-size: 12px;/*tamanho do texto*/
+    color: #ffffff;/*cor de texto branca*/
+    gap: 30px;/*distanciar os links*/
+}
+
+.links a {
+    text-decoration: none;/*remove sublinhado*/
+    color: #ffffff;/*cor branca dos links*/
+    font-size: 12px;/*tamanho da fonte*/
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*definir que a página não precisa de barra horizontal*/
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+
+
+
+
