@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,12 @@
     <!--Conexão com css-->
     <link rel="stylesheet" href="/style/produto.css">
     <!--logo da empresa para o navegador-->
-    <link rel="icon" type="image/png" 
-    href="/assets/logo-navegadorb.png">
+    <link rel="icon" type="image/png" href="/assets/logo-navegadorb.png">
 </head>
 
 
 <body>
-<header>
+    <header>
         <div class="topo">
             <!-- logo da empresa -->
             <div class="logo">
@@ -56,6 +56,41 @@
 
         </nav>
     </header>
-    
+
+    <!--area dos dados do produto-->
+    <div class="area-detalhes">
+
+    <div class="area-imagens">
+        <div class="img-lateral" id="img-lateral"> 
+
+        </div>
+        <div class="img-principal" id="img-principal">
+               <img id="img-maior">
+    </div>
+    <div class="area-textos">
+        <!--nome do produto-->
+    <h1 id="nome-produto"></h1>
+    <p id="preco-antigo"></p>
+    <!--area do pre promocional-->
+    <div class="preco-promocional">
+    <p id="preco-novo"></p>
+    <span id="desconto"></span>
+    </div>
+
+    <div id="esperssura"></div>
+    <div id="quantidade"></div>
+
+    </div>
+    <div class="btn-add-carrinho">
+         <button id="btn-add-carrinho"></button>
+    </div>
+    <div class="btn-comprar">
+         <button id="btn-comprar"></button>
+    </div>
+    </div>
+ 
+
+    <script src="/js/produto.js"></script>
 </body>
+
 </html>

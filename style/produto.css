@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-
-
-
+body{
+    overflow-x: hidden;/*remove a barra de rolagem horizontal*/
+    width: 100%;/*preencher sempre 100%da tela*/
 }
 
 
@@ -124,3 +125,56 @@ nav{
     gap: 10px; /*distância entre os elementos*/
 }
 
+/*configurar as imagens*/
+
+/*galeria*/
+
+.area-detalhes {
+     max-width: 1200px;
+     /*tamanho máximo da largura da área*/
+     margin: 40px auto;
+     /*margem de espaçamento, distanciar as imagens da borda da tela*/
+     padding: 10px;
+     /*serve para separar os elemtnos de perto das bordas fa div*/
+     display: flex;
+     /*permitir que as imagens fique uma embaixo da outra
+     ou uma ao lado da outra*/
+     gap: 50px;
+     /*e a distancia etre uma imgaem e outra*/
+}
+
+.area-imagens {
+
+     display: flex;
+     gap: 20px;
+     /*distancia as tags dentro da div*/
+}
+
+.img-lateral {
+    display: flex;
+    flex-direction: column; /*deixa as imagens uma embaixo da outra*/
+    gap: 10px; /*distancia entre uma miniatura e outra*/
+
+}
+
+.img-lateral{
+    width: 70px;/*largura da área laterais*/
+    height: 90px;/*altura da área laterais*/
+    object-fit: cover;/*redimenciona a imagem para caber na área*/
+    border: 2px solid transparent; /*bordas ao redor da área*/
+    border-radius: 10px;/*arredondar as bordas*/
+    cursor: pointer;/*alterar o curso para a mão*/
+    transition: 0.3s;/*colocar efeitoo de transição*/
+}
+
+.img-lateral:hover {
+    border-color: #ccc;/*adiciona borda ao passar o mouse pela imagem*/
+
+
+}
+
+.img-principal img{
+    width: 420px;/*tamanho da imagem principal*/
+    border-radius: 15px;/*arrendondar a imagem principal*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);/*adicionar sombra a imgame principal*/
+}
